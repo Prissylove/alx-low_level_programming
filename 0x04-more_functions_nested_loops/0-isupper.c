@@ -1,21 +1,20 @@
-#include"main.h"
-
+#include "main.h"
 /**
- * main - Entry point
- *
- * Description: prints _putchar using putchar prototype
- *
- * Return: Always 0 (Success)
-*/
+ * _isupper - checkes upper case
+ * @c: print int
+ * Return: give 1 or 0
+ */
 
-int main(void)
+int _isupper(int c)
 {
-	char str[] = "_putchar";
-	int ch;
+if (c >= 'A' && c <= 'Z')
+{
+return (1);
+}
 
-	for (ch = 0; ch < 8; ++ch)
-		_putchar(str[ch]);
-	_putchar('\n');
+else
+{
+return (0);
+}
 
-	return (0);
 }
